@@ -1,0 +1,2 @@
+Requirements
+Pandas / numpy / re / tkinter / random / urllib.request / request / Image, ImageTk / BytesIO / webbrowser
