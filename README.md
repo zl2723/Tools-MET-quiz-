@@ -19,11 +19,11 @@ The questions can be about the artist, time period, art genre, department, etc.
 
 Coding Process
 1. Extracted database containing all information of objects on display at the Metropolitan Museum
-2. Used pandas to delete unused columns. Integrated entries that have overlapping contents (e.g. France, South France), repeated information and cleared vague entries (e.g. unknown, perhaps). Added a new column for valid image links
-3. Created a list with only valid object ids corresponding to each of our four question types
+2. Used pandas to delete unused columns. Formatted entries that have overlapping and inconsistent contents (e.g. France, South France), repeated information (e.g. one datapoint being "France, Italy, France"), typos, or multidata types (e.g. century was listed as strings or floats at random). Cleared vague entries (e.g. unknown, perhaps, probably, etc.). Added a new column for valid image links
+3. Created a dictionary containing question category as key, and list of valid object ids corresponding to each of our four question categories as corresponding values to each key
 4. Created a new csv document holding the cleaned data
 5. Created functions to randomly select a category from the set of artist, region, time, and department and then randomly generate an object id from the valid_id_list accordingly
-6. Created functions to determine the content of the question stem, the object title, object image, related information link. Four choices were created within the same department while making sure that they don't have overlapping words. Choices were assigned to ABCD randomly.
+6. Created functions to determine the content of the question stem, the object title, object image, related information link. Four choices were created within the same department while making sure that they don't have overlapping words. Choices were assigned to ABCD randomly
 7. Created functions to record the letter corresponding to the correct answer and to check if the correct answer is chosen
 8. Created functions to come up with the next question and refresh all setups for the previous question
 9. Created functions to count the total number of questions that have been answered and the correctly chosen ones
