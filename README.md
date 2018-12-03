@@ -32,8 +32,13 @@ Coding Process
 12. Adjusted the layout of the GUI window - shows up as intended on Windows, slightly differently on Mac.
 
 RUN INSTRUCTION
+**Program**
 Run through the The MET Quiz file until the end for the pop-up window to show. Then you can click out the buttons to check the functionality of the implementation (and your knowledge about the MET objects).
-**Mac Users: Do not click "quit" button as it causes the program to crash. Use the GUI x button at the top left to exit.
+
+*Mac Users: Do not click "quit" button as it causes the program to crash. Use the GUI x button at the top left to exit.
+
+**Raw Cleaning File**
+To see how the data was cleaned to create "cleaned_data_final.csv", run Clean_run_data file until the very end except the last line of code, which creates a csv file from the cleaned dataframe.
 
 Requirements
 Pandas / numpy / re / tkinter / random / urllib.request / request / Image, ImageTk / BytesIO / webbrowser / string
